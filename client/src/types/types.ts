@@ -14,17 +14,6 @@ export interface Producto {
     stock: number;
 }
 
-export interface ProductoPrecios {
-    id?: number;
-    codigo_producto: string;
-    marca: string;
-    codigo: string;
-    name: string;
-    cat: number; 
-    stock: number;
-    precios: Precio[];
-}
-
 export interface Precio {
     id: number;    
     fecha: string; //dd-MM-yyyy

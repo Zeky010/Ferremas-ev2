@@ -37,19 +37,6 @@ class Producto(models.Model):
         verbose_name_plural = 'Productos'
         ordering = ['id']
 
-class TipoMedidaProducto(models.Model):
-    producto = models.ForeignKey(Producto, on_delete=models.CASCADE, unique= True)
-    detalle =  models.TextField(max_length=20, verbose_name='Detalle')
-    decimales = models.BooleanField(verbose_name='Decimal o Entero', default= False)
-    
-    def __str__(self):
-        return 'Medida de Producto'
-
-    class Meta:
-        verbose_name = 'TipoMedidaProducto'
-        verbose_name_plural = 'TipoMedidaProductos'
-        ordering = ['producto']
-
 class PrecioProducto(models.Model):
     producto = models.ForeignKey(Producto, on_delete=models.CASCADE, related_name='precios')
     fecha = models.DateTimeField(verbose_name='Fecha')
