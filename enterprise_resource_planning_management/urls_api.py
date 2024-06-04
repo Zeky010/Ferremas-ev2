@@ -11,5 +11,6 @@ router.register(r'precios-productos', views.ProductoConPrecios, 'Producto-Con-Pr
 router.register(r'precios', views.PrecioViewSet)
 #router.register(r'producto-con-precios', views.ProductoConPrecios, 'ProductoConPrecios')
 urlpatterns = [
-    path('', include(router.urls))
+    path('', include(router.urls)),
+    path('create-payment/', views.CreatePaymentView.as_view(), name='create-payment'),
 ]
