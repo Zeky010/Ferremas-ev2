@@ -8,6 +8,7 @@ export function Navigation() {
             <Link to="/categorias">Create Category</Link>
             <Link to="/Productos">Create Productos</Link>
             <Link to="/precios">Create Precios</Link>
+            <Link to="/paypal">pago</Link>
         </div>
 
     )

@@ -172,3 +172,7 @@ CRONTAB_COMMAND_SUFFIX = '2>&1'
 
 CRONJOBS = [
 ]
+#paypal API credentials
+PAYPAL_CLIENT_ID = 'AUAFpkQvlPWkr1GxcGNcPCu4elK-QE46I0HhGUDgrDKydubaBuzr7mbr4xuxbLqgz67mv_rvEa_7yEkb'
+PAYPAL_CLIENT_SECRET = 'EJj5O7c8_cok8v7xMLMbHW4QPc_VjIzrfYYfVInZ9uRIyqcvx3Ulzx5U4rqoTYlTAhuoEIrRoYk3IPTI'
+PAYPAL_MODE = 'sandbox'  # 'live' for production
