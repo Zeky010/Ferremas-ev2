@@ -5,13 +5,11 @@ export function Navigation() {
 
         <div>
             <h1>Ferremas App</h1>
-            <Link to="/categorias">Create Category</Link>
-            <Link to="/Productos">Create Productos</Link>
-            <Link to="/precios">Create Precios</Link>
+            <Link to="/categorias">Create Category</Link><br/>
+            <Link to="/Productos">Create Productos</Link><br/>
+            <Link to="/precios">Create Precios</Link><br/>
             <Link to="/paypal">pago</Link>
         </div>
 
     )
 }
-
-
