@@ -58,6 +58,7 @@ class Pedidos(models.Model):
         ordering = ['fechaPedido']
 
 #Productos en un pedido
+'''
 class ProductoPedidos(models.Model):
     pedido = models.ForeignKey(Pedidos, on_delete=models.CASCADE)
     producto = models.ForeignKey(Producto, on_delete=models.CASCADE)
@@ -66,3 +67,4 @@ class ProductoPedidos(models.Model):
         verbose_name = 'Productos por Pedido'
         verbose_name_plural = 'Productos por Pedidos'
         ordering = ['pedido']
+'''
