@@ -9,7 +9,6 @@ router.register(r'productos', views.ProductoViewSet)
 router.register(r'productos_disponibles_bodega', views.ProductoDisponibleBodegaViewSet, 'ProductosDisponibles')
 router.register(r'precios-productos', views.ProductoConPrecios, 'Producto-Con-Precios')
 router.register(r'precios', views.PrecioViewSet)
-#router.register(r'producto-con-precios', views.ProductoConPrecios, 'ProductoConPrecios')
 urlpatterns = [
     path('', include(router.urls)),
     path('create-payment/', views.CreatePaymentView.as_view(), name='create-payment'),
