@@ -9,7 +9,7 @@ const initialOptions = {
     intent: "capture",
 };
 
-const App = () => {
+const PaypalPage = () => {
     return (
         <PayPalScriptProvider options={initialOptions}>
             <div className="App">
@@ -20,4 +20,4 @@ const App = () => {
     );
 };
 
-export default App;
+export default PaypalPage;
