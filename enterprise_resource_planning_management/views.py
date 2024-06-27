@@ -42,7 +42,7 @@ class CreatePaymentView(APIView):
             },
             "transactions": [{
                 "amount": {
-                    "total": "10.00",
+                    "total": "10",
                     "currency": "USD"
                 },
                 "description": "This is the payment transaction description."
